@@ -4,8 +4,10 @@ public class StringProcessor {
                 .replaceAll("_","%5F").replaceAll("\\.","%2E")
                 .replaceAll("\\+","%2B").replaceAll("!","%21")
                 .replaceAll("\\*","%2A").replaceAll("\"","%22")
-                .replaceAll("'","%27").replaceAll("\\(","%28")
-                .replaceAll("\\)","%29").replaceAll(";","%3B")
+                .replaceAll("'","%27")
+                .replaceAll("\\(","%28")
+                .replaceAll("\\)","%29")
+                .replaceAll(";","%3B")
                 .replaceAll("/","%2F").replaceAll("\\?","%3F")
                 .replaceAll(":","%3A").replaceAll("@","%40")
                 .replaceAll("=","%3D").replaceAll("&","%26")
@@ -16,6 +18,7 @@ public class StringProcessor {
                 .replaceAll("#", "%23").replaceAll("\\^", "%5E")
                 .replaceAll("\\[", "%5B").replaceAll("]", "%5D")
                 .replaceAll("\\{", "%7B").replaceAll("}", "%7D")
+                .replaceAll("<","%3C").replaceAll(">","%3E")
                 .replaceAll(" ", "+");
         //characters that are not in the linked doc, figured out myself how to replace them
         return output;
